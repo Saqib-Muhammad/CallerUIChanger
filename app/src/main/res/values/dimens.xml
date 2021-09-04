@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region text size-->
+    <dimen name="caption_1">13sp</dimen>
+    <dimen name="headline_1">46sp</dimen>
+    <dimen name="headline_2">30sp</dimen>
+    <dimen name="headline_3">24sp</dimen>
+    <dimen name="headline_4">18sp</dimen>
+    <dimen name="subtitle_1">16sp</dimen>
+    <dimen name="subtitle_2">14sp</dimen>
+    <!--endregion-->
+
+    <!--region default spacings-->
+    <dimen name="default_spacing">18dp</dimen>
+    <dimen name="default_spacing_big">32dp</dimen>
+    <dimen name="default_spacing_small">6dp</dimen>
+    <!--endregion-->
+
+    <style name="Koler.Text.Caption" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">@dimen/caption_1</item>
+        <item name="android:textColor">?colorTextDisabled</item>
+<!--        <item name="android:fontFamily">@font/google_sans_bold</item>-->
+    </style>
+
+</resources>

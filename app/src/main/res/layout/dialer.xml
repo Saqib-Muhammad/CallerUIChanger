@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index"
+    tools:context=".CallActivity">
+
+    <TextView
+        android:id="@+id/callInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185"
+        tools:text="TextView" />
+
+    <com.codingsector.calleruichanger.fromkolerapp.IconButton
+        android:id="@+id/addCallButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        app:srcCompat="@drawable/ic_baseline_stop_circle_24" />
+
+    <Button
+        android:id="@+id/hangup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hang up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/answer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callInfo" />
+
+    <Button
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hangup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hangup" />
+
+    <com.codingsector.calleruichanger.fromkolerapp.IconButton
+        android:id="@+id/recordingButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addCallButton"
+        app:layout_constraintStart_toEndOf="@+id/addCallButton"
+        app:layout_constraintTop_toTopOf="@+id/addCallButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_record_voice_over_24" />
+
+    <com.codingsector.calleruichanger.fromkolerapp.IconButton
+        android:id="@+id/BluetoothButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recordingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recordingButton"
+        app:layout_constraintTop_toTopOf="@+id/recordingButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_bluetooth_24" />
+
+    <com.codingsector.calleruichanger.fromkolerapp.IconButton
+        android:id="@+id/speakerButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/addCallButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addCallButton"
+        app:layout_constraintTop_toBottomOf="@+id/addCallButton"
+        app:srcCompat="@drawable/ic_baseline_speaker_24" />
+
+    <com.codingsector.calleruichanger.fromkolerapp.IconButton
+        android:id="@+id/muteButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/speakerButton"
+        app:layout_constraintStart_toEndOf="@+id/speakerButton"
+        app:layout_constraintTop_toTopOf="@+id/speakerButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_volume_mute_24" />
+
+    <com.codingsector.calleruichanger.fromkolerapp.IconButton
+        android:id="@+id/keypadButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/muteButton"
+        app:layout_constraintEnd_toEndOf="@+id/BluetoothButton"
+        app:layout_constraintStart_toEndOf="@+id/muteButton"
+        app:layout_constraintTop_toTopOf="@+id/muteButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_dialpad_24" />
+
+    <ImageButton
+        android:id="@+id/callEndButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/muteButton"
+        app:layout_constraintStart_toStartOf="@+id/muteButton"
+        app:layout_constraintTop_toBottomOf="@+id/muteButton"
+        app:srcCompat="@drawable/ic_baseline_call_end_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

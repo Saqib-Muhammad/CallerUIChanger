@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Koler" />
+
+    <!--region text -->
+    <style name="Koler.Text" parent="android:TextAppearance">
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Koler.Text.Headline1">
+        <item name="android:textSize">@dimen/headline_1</item>
+    </style>
+
+    <style name="Koler.Text.Headline2">
+        <item name="android:textSize">@dimen/headline_2</item>
+    </style>
+</resources>

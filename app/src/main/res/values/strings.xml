@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Caller UI Changer</string>
+    <string name="call_input_hint">Call…</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_keypaid">KeypaidActivity</string>
+
+    <!--region dialpad letters-->
+    <string name="dialpad_0_letters">+</string>
+    <string name="dialpad_1_letters">Voicemail</string>
+    <string name="dialpad_2_letters">ABC</string>
+    <string name="dialpad_3_letters">DEF</string>
+    <string name="dialpad_4_letters">GHI</string>
+    <string name="dialpad_5_letters">JKL</string>
+    <string name="dialpad_6_letters">MNO</string>
+    <string name="dialpad_7_letters">PQRS</string>
+    <string name="dialpad_8_letters">TUV</string>
+    <string name="dialpad_9_letters">WXYZ</string>
+    <string name="dialpad_star_letters"></string>
+    <string name="dialpad_pound_letters"></string>
+    <!--endregion-->
+
+    <string name="error_not_default_dialer_call">Set koler as your default dialer to make calls</string>
+
+    <string name="pref_key_color">accent_color</string>
+
+    <string name="error_enter_number">Please enter a number first</string>
+
+</resources>
